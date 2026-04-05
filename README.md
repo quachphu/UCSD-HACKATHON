@@ -1,4 +1,4 @@
-# AgenticHire 🤖
+# AgenticHire
 
 > **An autonomous AI hiring pipeline — powered by Fetch.ai uAgents and ASI:One.**
 > Built for Diamond Hacks 2026 — Fetch.ai Track.
@@ -7,14 +7,14 @@
 
 ## 🎬 Watch the Demo First
 
-|                     |                                                     |
-| ------------------- | --------------------------------------------------- |
-| 📊 **Presentation** | [View on Canva](https://canva.link/41ldhk5zj3wkdlv) |
-| 🎥 **Demo Video**   | _(coming soon — check back before judging!)_        |
+|                  |                                                     |
+| ---------------- | --------------------------------------------------- |
+| **Presentation** | [View on Canva](https://canva.link/41ldhk5zj3wkdlv) |
+| **Demo Video**   | _(coming soon — check back before judging!)_        |
 
 ---
 
-## 😤 The Story Behind This
+## The Story Behind This
 
 It's Monday morning. The CEO storms into the office:
 
@@ -63,9 +63,7 @@ The orchestrator receives the message and **immediately** sends a `RequestPaymen
 | **Reject**                 | End session gracefully            |
 | **Pay With FET — 0.1 FET** | Confirm payment on Dorado testnet |
 
-> **Payment Protocol in action:** The `AgentPaymentProtocol` manifest is published alongside `AgentChatProtocol`, allowing ASI:One to render the native Reject / Pay With FET card automatically. The wallet balance is shown inline. This is a **live on-chain transaction** on the Fetch.ai Dorado testnet — verifiable on the blockchain explorer.
-
-![CEO sends hiring request — ASI:One renders native FET payment card with Reject and Pay With FET options](project_photo_gallery/send_email.png)
+![CEO sends hiring request — ASI:One renders native FET payment card with Reject and Pay With FET options](project_photo_gallery/sending_gmail.png)
 
 > ☝️ **What you're seeing:** The CEO's message arrives, and within milliseconds the `AgentPaymentProtocol` fires — ASI:One renders the native payment card. The wallet balance (`28.59 FET`) is shown inline. No custom UI. No frontend. This is Fetch.ai's on-chain economy working live.
 
@@ -293,6 +291,8 @@ OUTREACH_SEED=your-unique-outreach-seed
 ```
 
 ### 3. Fund your ASI:One testnet wallet
+
+Go to this : https://explore-dorado.fetch.ai/ or
 
 ```bash
 # Get your wallet address: asi1.ai → Payments → Add Funds
