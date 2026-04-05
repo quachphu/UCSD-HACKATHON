@@ -10,7 +10,7 @@
 |                  |                                                     |
 | ---------------- | --------------------------------------------------- |
 | **Presentation** | [View on Canva](https://canva.link/41ldhk5zj3wkdlv) |
-| **Demo Video**   | _(coming soon — check back before judging!)_        |
+| **Demo Video**   | [View on Youtube](https://youtu.be/81ZDAMTBrfw)     |
 
 ---
 
