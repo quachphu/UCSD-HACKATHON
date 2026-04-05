@@ -125,9 +125,9 @@ Each candidate receives a unique, personalized email referencing their specific 
 ## Architecture
 
 ```
-CEO types on ASI:One
-        │
-        ▼
+                CEO types on ASI:One
+                        │
+                        ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                   Orchestrator Agent                        │
 │      AgentChatProtocol + AgentPaymentProtocol               │
@@ -140,28 +140,28 @@ CEO types on ASI:One
 └────────────────────────┬────────────────────────────────────┘
                          │  RecruitmentRequest
                          ▼
-              ┌──────────────────┐
-              │  Recruiter Agent │  ← Generates JD via ASI:One LLM
-              └────────┬─────────┘
-                       │  TalentSearchRequest
-                       ▼
-              ┌──────────────────┐
-              │  Scout Agent     │  ← Searches candidate pool
-              └────────┬─────────┘
-                       │  CandidateProfiles
-                       ▼
-              ┌──────────────────┐
-              │  Ranker Agent    │  ← Scores candidates via ASI:One LLM
-              └────────┬─────────┘
-                       │  RankedCandidates
-                       ▼
-              ┌──────────────────┐
-              │  Outreach Agent  │  ← Drafts + sends emails via SendGrid
-              └────────┬─────────┘
-                       │  OutreachSummary
-                       ▼
-        Orchestrator → CEO on ASI:One
-        (results + on-chain TX receipt)
+                ┌──────────────────┐
+                │  Recruiter Agent │  ← Generates JD via ASI:One LLM
+                └────────┬─────────┘
+                        │  TalentSearchRequest
+                        ▼
+                ┌──────────────────┐
+                │  Scout Agent     │  ← Searches candidate pool
+                └────────┬─────────┘
+                        │  CandidateProfiles
+                        ▼
+                ┌──────────────────┐
+                │  Ranker Agent    │  ← Scores candidates via ASI:One LLM
+                └────────┬─────────┘
+                        │  RankedCandidates
+                        ▼
+                ┌──────────────────┐
+                │  Outreach Agent  │  ← Drafts + sends emails via SendGrid
+                └────────┬─────────┘
+                        │  OutreachSummary
+                        ▼
+            Orchestrator → CEO on ASI:One
+            (results + on-chain TX receipt)
 ```
 
 **Tech stack:** Python · uAgents (Fetch.ai) · ASI:One (`asi1-mini` LLM) · SendGrid · cosmpy · Agentverse
@@ -368,12 +368,10 @@ AutoRecruit/
 | Real email delivery via SendGrid                                | ✅     |
 | No custom frontend — ASI:One is the only UI                     | ✅     |
 
-![tag:innovationlab](https://img.shields.io/badge/innovationlab-3D8BD3)
-
 ---
 
 ## Team
 
-Built at **Diamond Hacks 2026** — Fetch.ai Track.
+Built at **Diamond Hacks 2026** — Fetch.ai Track by Phu Quach.
 
 > _"LET ME COOK." — The CEO, probably._
